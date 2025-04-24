@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: 'Login'}) %>
+
+  <body class="fundo">
+    <div>
+      <%- include('partials/header') %>
+      <section>
+        <link rel="stylesheet" href="./css/form.css" />
+        <div class="container-fluid">
+          <div class="row">
+            <div>
+              <h2>Login</h2>
+              <form action="/login" method="POST">
+                <div class="form-group">
+                  <label for="username">Nome de utilizador:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Palavra-passe:</label>
+                  <div class="input-wrapper">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      required
+                    />
+                    <!-- <input type="checkbox" onclick="mostraPassword()" /> Mostrar
+                  Palavra-passe -->
+                    <span id="mostrarSenha"
+                      ><i class="fa-regular fa-eye-slash"></i
+                    ></span>
+                  </div>
+                  <div>
+                    <span id="password_error" style="color: red"></span>
+                  </div>
+                </div>
+                <button type="submit" class="botao_login">LOGIN</button>
+                <div>
+                  <br />
+                  <a href="criar_conta">Não tem conta? Registar</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/matching_passwords.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <%- include('partials/head', {title: 'Jogo do Galo'}) %>
+  <link rel="stylesheet" href="./css/MenusJogos.css" />
+
+  <body onload="selectOptions('/jogoGalo')" class="fundo">
+    <div><%- include('partials/header') %></div>
+    <div class="button-container2">
+      <button id="facil" class="button1" onclick="DificuldadeGalo('easy')">
+        FÁCIL
+      </button>
+      <button id="medio" class="button2" onclick="DificuldadeGalo('medium')">
+        MÉDIA
+      </button>
+      <button
+        id="dificil"
+        class="button3"
+        onclick="DificuldadeGalo('hard')"
+      >
+        DIFÍCIL
+      </button>
+      <button id="play" class="button4">
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+    <script src="./js/dificuldades.js"></script>
+  </body>
+</html>
+

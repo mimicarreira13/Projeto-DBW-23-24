@@ -1,0 +1,480 @@
+.fundo {
+  background-image: url("../images/fundo.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.logo {
+  height: 7%;
+  width: 7%;
+  float: left;
+  margin-left: 5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.nome_site {
+  height: 17%;
+  width: 17%;
+  float: left;
+  margin-left: 1px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.navegacao {
+  background-color: rgba(63, 43, 144, 0.39);
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  z-index: 1000;
+}
+.navegacao paginas {
+  float: left;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  margin-inline-start: 50px;
+  text-decoration: none;
+}
+
+.navegacao paginas:hover {
+  color: rgba(174, 155, 223, 1);
+  cursor: pointer;
+}
+
+.navegacao login {
+  float: right;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+  text-decoration: none;
+  background-color: rgba(78, 53, 142, 1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+.navegacao login:hover {
+  background-color: rgba(104, 75, 176, 1);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.off-screen-menu {
+  display: none;
+}
+
+.instrucoes {
+  color: white;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 50px;
+  text-align: left;
+}
+
+.section-divider {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+@media screen and (min-width: 900px) {
+  .fa-solid.fa-arrow-right-from-bracket {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .purple-circle {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(104, 75, 176, 1);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .fa-solid.fa-arrow-right-from-bracket {
+    color: white;
+    font-size: 30px; /* Adjust as needed */
+    margin-top: 11px;
+    margin-left: 13px;
+  }
+
+  #person {
+    width: 14px;
+    height: 14px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 8px;
+    left: 19px;
+    cursor: pointer;
+  }
+
+  #person::after {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 34px;
+    border: 3px solid white;
+    top: 13px;
+    right: -12px;
+    border-radius: 50% 50% 0% 0%;
+  }
+  .fundo {
+    background-image: url("../images/fundo_tel.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  .logo {
+    height: 15%;
+    width: 15%;
+    float: left;
+    margin-left: 80px;
+    align-items: center;
+  }
+  .nome_site {
+    height: 35%;
+    width: 35%;
+    float: left;
+    margin-top: 28px;
+  }
+  /* Para telemoveis coisas escritas nanavegação*/
+  .navegacao {
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .navegacao paginas {
+    display: none;
+  }
+  .navegacao login {
+    display: none;
+  }
+
+  .off-screen-menu {
+    background-color: rgba(57, 38, 126, 0.88);
+    height: 100%;
+    max-height: 600px;
+    width: 100%;
+    max-width: 330px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    font-size: 130%;
+    transition: 0.3s ease;
+  }
+  .off-screen-menu.active {
+    left: 0;
+  }
+  .ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 12px;
+  }
+  .ham-menu span {
+    height: 5px;
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+  }
+  .ham-menu span:nth-child(1) {
+    top: 25%;
+  }
+  .ham-menu span:nth-child(3) {
+    top: 75%;
+  }
+  .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .ham-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  ul li {
+    list-style-type: none;
+    color: white;
+  }
+  ul li:hover {
+    color: rgba(174, 155, 223, 1);
+    cursor: pointer;
+  }
+
+  .game-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    margin-right: 27px;
+    margin-top: -30px;
+  }
+
+  .game img {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(78, 53, 142, 1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .jogo {
+    margin-top: 60px;
+  }
+  .game h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: rgb(78, 53, 142, 1);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 70%;
+    margin-left: 10px;
+    background-color: rgba(78, 53, 142, 1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .purple-circle {
+    width: 66px;
+    height: 66px;
+    background-color: rgba(104, 75, 176, 1);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+  }
+  .fa-solid.fa-arrow-right-from-bracket {
+    color: white;
+    font-size: 40px; /* Adjust as needed */
+    margin-top: 12px;
+    margin-left: 14px;
+  }
+
+  #person {
+    width: 22px;
+    height: 22px;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 6px;
+    left: 23px;
+  }
+
+  #person::after {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 42px;
+    border: 4px solid white;
+    top: 20px;
+    right: -13px;
+    border-radius: 50% 50% 0% 0%;
+  }
+  .fundo {
+    background-image: url("../images/fundo_tel.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  .logo {
+    height: 15%;
+    width: 15%;
+    float: left;
+    margin-left: 80px;
+    align-items: center;
+  }
+  .nome_site {
+    height: 35%;
+    width: 35%;
+    float: left;
+    margin-top: 35px;
+  }
+  /* Para telemoveis coisas escritas nanavegação*/
+  .navegacao {
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .navegacao paginas {
+    display: none;
+  }
+  .navegacao login {
+    display: none;
+  }
+
+  .off-screen-menu {
+    background-color: rgba(57, 38, 126, 0.88);
+    height: 100%;
+    max-height: 600px;
+    width: 100%;
+    max-width: 330px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    font-size: 130%;
+    transition: 0.3s ease;
+  }
+  .off-screen-menu.active {
+    left: 0;
+  }
+  .ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 32px;
+  }
+  .ham-menu span {
+    height: 5px;
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+  }
+  .ham-menu span:nth-child(1) {
+    top: 25%;
+  }
+  .ham-menu span:nth-child(3) {
+    top: 75%;
+  }
+  .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .ham-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  ul li {
+    list-style-type: none;
+    color: white;
+  }
+}
+#resultText {
+  color: white;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 50px;
+  text-align: left;
+}
+
+.container a {
+  color: #fff;
+  padding-left: 35px;
+  transition: color 0.4s ease;
+}
+
+.container a:hover {
+  color: rgb(92, 135, 200);
+}
+.text {
+  font-size: 30px;
+}
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  min-height: 80vh;
+}
+
+.game {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: background-color 0.4s ease, transform 0.2s ease;
+}
+@media screen and (min-width: 900px) {
+  .game img {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(78, 53, 142, 1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .game h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: rgb(78, 53, 142, 1);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    height: 70%;
+    margin-left: 50px;
+    background-color: rgba(78, 53, 142, 1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+}
+
+.game:hover {
+  transform: scale(1.05);
+}
+
+.game button {
+  background-color: rgb(78, 53, 142, 1);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.conteudo {
+  padding-top: 140px;
+  margin-left: 25px;
+  color: white;
+  text-align: left;
+  font-size: large;
+}

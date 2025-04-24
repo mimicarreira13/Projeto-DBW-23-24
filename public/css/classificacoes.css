@@ -1,0 +1,70 @@
+h1 {
+  color: white;
+  position: absolute;
+  top: 17%;
+  left: 5%;
+}
+
+table {
+  color: black;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 14%;
+  margin-bottom: 20px;
+}
+
+table td {
+  padding: 15px;
+  border: 1px solid black;
+  width: 300px;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+table td.jogo_galo {
+  color: white;
+  background-color: rgba(170, 80, 165, 0.8);
+  text-align: center;
+}
+
+table td.jogo_memoria {
+  color: white;
+  background-color: rgba(52, 60, 205, 0.8);
+  text-align: center;
+}
+table td.jogo_forca {
+  color: white;
+  background-color: rgba(67, 180, 117, 0.8);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+  table {
+    color: black;
+    display: inline-block;
+    margin-left: 13%;
+    margin-top: 50%;
+    margin-bottom: -150px;
+  }
+  table td {
+    padding: 15px;
+    border: 1px solid black;
+    width: 300px;
+    background-color: rgb(255, 255, 255, 0.9);
+  }
+}
+
+/*.container-atividade {
+  width: 1418px;
+  height: 761px;
+  position: absolute;
+  left: 148px;
+
+  bottom: 47px;
+  background-color: white;
+}*/

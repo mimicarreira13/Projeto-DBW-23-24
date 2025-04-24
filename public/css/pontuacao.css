@@ -1,0 +1,59 @@
+.titulo{
+    color: #FFF;
+    font-size: 23px;
+    margin-top:10%;
+    margin-left: 5%;
+    margin-bottom: 2.5%;
+
+}
+
+.table_titulo{
+    color:#FFF;
+    margin-top: 5%;
+    font-size: 23px;
+    background-color: #9747FF;
+    text-align: center;
+
+}
+
+.table_corpo{
+    color:#000;
+    margin-top: 5%;
+    font-size: 23px;
+    border: 2px solid #000;
+    background-color: #FFF;
+    text-align: center;
+
+}
+
+table {
+    width: 79%; 
+    border-collapse: collapse; 
+    margin-left: 10%;
+}
+
+table td {
+    width: 50%; 
+    border: 1px solid #000; 
+}
+table th {
+    width: 50%; 
+    border: 1px solid #000; 
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%; 
+        border-collapse: collapse; 
+        margin-left: 1.25%;
+        margin-bottom: 150px; /* Adiciona um espaçamento abaixo de cada tabela */
+    }
+
+    .titulo{
+        color: #FFF;
+        font-size: 23px;
+        margin-top:20%;
+        margin-left: 5%;
+    
+    }
+}

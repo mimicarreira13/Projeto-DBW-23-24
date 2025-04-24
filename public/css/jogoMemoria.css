@@ -1,0 +1,158 @@
+/*fundo para o jogo */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-position: center;
+  padding: 65px;
+  background: #fff;
+  margin-top: 40%;
+  width: 85%;
+  margin-top: -5%;
+  margin-left: 7.5%;
+}
+
+/* botão de reset */
+.reset {
+  padding: 15px 20px;
+  color: rgba(104, 75, 176, 1);
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  bottom: -150px;
+  margin-bottom: 15px;
+}
+
+/* jogo de memória */
+.game {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  position: relative;
+  margin-left: 25%;
+}
+
+/* cartas */
+.item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  background: #fff;
+  border: 2px solid rgba(104, 75, 176, 1);
+  transition: 0.25s;
+}
+/* cartas viradas */
+.item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(104, 75, 176, 1);
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+.boxOpen:after {
+  transform: rotateY(180deg);
+}
+
+.item.boxOpen {
+  transform: rotateY(0deg);
+}
+/* texto de tempo e pontuação */
+.tempo {
+  position: absolute;
+  left: 2%;
+  font-size: 25px;
+  top: 15%;
+  color: rgba(104, 75, 176, 1);
+}
+
+/* texto de pontuação */
+.pontuacao {
+  position: absolute;
+  left: 2%;
+  font-size: 25px;
+  top: 25%;
+  color: rgba(104, 75, 176, 1);
+}
+
+/* botão de confirmação */
+.my-confirm-button {
+  background-color: rgba(104, 75, 176, 1) !important;
+  width: fit-content;
+}
+
+@media screen and (max-width: 600px){
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-position: center;
+    padding: 65px;
+    background: #fff;
+    margin-top: 40%;
+    width: 85%;
+    margin-top: -5%;
+    margin-left: 7.5%;
+  }
+
+  .game {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 80%;
+  }
+  
+  .item {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: #fff;
+    border: 2px solid rgba(104, 75, 176, 1);
+    transition: 0.25s;
+  }
+  
+  .tempo {
+    position: absolute;
+    left: 2%;
+    font-size: 25px;
+    top: 10%;
+    color: rgba(104, 75, 176, 1);
+    left : 13.5%
+  }
+  
+  .pontuacao {
+    position: absolute;
+    left: 2%;
+    font-size: 25px;
+    top: 20%;
+    color: rgba(104, 75, 176, 1);
+    left : 25%
+  }
+  
+}

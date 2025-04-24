@@ -1,0 +1,54 @@
+<header>
+  <nav class="navegacao">
+    <img src="/images/logo.png" class="logo" />
+    <img src="/images/nome_site.png" class="nome_site" />
+    <paginas onclick="window.location.href='/instrucoes'">INSTRUÇÕES</paginas>
+    <paginas onclick="window.location.href='/sobre'">SOBRE</paginas>
+    <paginas onclick="window.location.href='novidade'">NOVIDADES</paginas>
+    <paginas onclick="window.location.href='/'">PÁGINA INICIAL</paginas>
+    <% if (isAuthenticated) { %>
+    <login onclick="window.location.href='/logout'">LOGOUT</login>
+    <paginas onclick="window.location.href='/minhaConta'"
+      >A MINHA CONTA</paginas
+    >
+    <% } else { %>
+    <login onclick="window.location.href='/criar_conta'">LOGIN</login>
+    <% } %> <% if (isAuthenticated) { %>
+    <div class="purple-circle">
+      <i
+        onclick="window.location.href='/logout'"
+        class="fa-solid fa-arrow-right-from-bracket"
+      ></i>
+    </div>
+    <% } else { %>
+    <div class="purple-circle">
+      <div onclick="window.location.href='/criar_conta'" id="person"></div>
+    </div>
+    <% } %>
+    <div class="off-screen-menu">
+      <ul>
+        <li onclick="window.location.href='/'">Página Inicial</li>
+        <br />
+        <li onclick="window.location.href='/instrucoes'">Intruções</li>
+        <br />
+        <li onclick="window.location.href='/sobre'">Sobre</li>
+        <br />
+        <li onclick="window.location.href='/novidade'">Novidades</li>
+        <br />
+        <% if (isAuthenticated) { %>
+        <li onclick="window.location.href='/minhaConta'">A Minha Conta</li>
+        <br />
+        <li onclick="window.location.href='/logout'">Logout</li>
+        <% } else { %>
+        <li onclick="window.location.href='/criar_conta'">Login</li>
+        <% } %>
+      </ul>
+    </div>
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <script src=".././js/ham_menu.js"></script>
+</header>

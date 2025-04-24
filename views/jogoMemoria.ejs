@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <%- include('partials/head', {title: 'Jogo da Memoria'}) %>
+<body class="fundo">
+
+    <div><%- include('partials/header') %></div>
+    <link rel="stylesheet" href="./css/MenusJogos.css" />
+    <link rel="stylesheet" href="./css/jogoMemoria.css" />
+    <div class="container-fluid">
+            <section class="center-container">
+                <div class="fundo_titulo">
+                <h1>Jogo da Memoria</h1>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <div class ="game" ></div>
+                    <div class="controlo">
+                            <div class="estado">
+                                <div class="tempo">TEMPO RESTANTE: 0 SEG</div>
+                                <div class="pontuacao">PONTUAÇAO: 0 </div>
+                            </div>
+                        <button class="reset" onclick="window.location.reload">Recomeçar</button>
+                </div>
+            </section>
+    </body>
+<script src="./js/jogoMemoria.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const numCartas = sessionStorage.getItem("numCartas");
+        if (numCartas) {
+            geraJogo(parseInt(numCartas));
+        }
+
+    });
+</script>
+
+</html>
+</script>
+</html>

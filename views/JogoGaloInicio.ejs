@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <%- include('partials/head', {title: 'Jogo do Galo'}) %>
+  <link rel="stylesheet" href="./css/MenusJogos.css" />
+  <link rel="stylesheet" href="./css/jogoMemoria.css" />
+
+  <body class="fundo">
+    <div><%- include('partials/header') %></div>
+
+    <section class="center-container">
+      <div class="fundo_titulo">
+        <h1>Jogo da Galo</h1>
+      </div>
+    </section>
+    <div class="button-container">
+      <button
+        onclick="window.location.href='/instrucoes'"
+        class="button1"
+      >
+        INSTRUÇÕES
+      </button>
+      <button onclick="window.location.href='/jogoGaloDificuldade'" class="button2">
+        DIFICULDADE
+      </button>
+      <button onclick="window.location.href='/jogoGalo'" class="button4">
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+  </body>
+</html>

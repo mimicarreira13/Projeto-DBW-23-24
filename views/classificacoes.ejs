@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <%- include('partials/head', {title: 'Classificacoes'}) %>
+
+  <body class="fundo">
+    <div><%- include('partials/header') %></div>
+    <link rel="stylesheet" href="./css/classificacoes.css" />
+    <section>
+      <h1>Classificações</h1>
+    </section>
+    <div class="container-atividade">
+      <table>
+        <tr>
+          <td class="jogo_galo">Ranking (Jogo do Galo)</td>
+        </tr>
+        <% for(let i = 0; i < galo.length; i++) { %>
+          <% if (galo[i].score_galo_t != 0) { %>
+          <tr>
+            <td>
+              <%= i+1 %>º (<%= galo[i].username %>) - <%= galo[i].score_galo_t %> Pontos
+            </td>
+          </tr>
+          <% } else { %>
+            <tr>
+              <td style="text-align: center;">
+               ----------------
+              </td>
+            </tr>
+            <% } %>
+          <% } %>
+      </table>
+      <table>
+        <tr>
+          <td class="jogo_memoria">Ranking (Jogo da Memória)</td>
+        </tr>
+        <% for(let i = 0; i < memoria.length; i++) { %>
+          <% if (memoria[i].score_memoria_t != 0) { %>
+          <tr>
+            <td>
+              <%= i+1 %>º (<%= memoria[i].username %>) - <%= memoria[i].score_memoria_t %> Pontos
+            </td>
+          </tr>
+          <% } else { %>
+            <tr>
+              <td style="text-align: center;">
+               ----------------
+              </td>
+            </tr>
+            <% } %>
+          <% } %>
+      </table>
+
+      <table>
+        <tr>
+          <td class="jogo_forca">Ranking (Jogo da Forca)</td>
+        </tr>
+      </tr>
+      <% for(let i = 0; i < forca.length; i++) { %>
+        <% if (forca[i].score_forca_t != 0) { %>
+      <tr>
+        <td>
+          <%= i+1 %>º (<%= forca[i].username %> ) - <%= forca[i].score_forca_t %> Pontos
+        </td>
+      </tr>
+      <% } else { %>
+        <tr>
+          <td style="text-align: center;">
+           ----------------
+          </td>
+        </tr>
+        <% } %>
+      <% } %>
+      </table>
+    </div>
+  </body>
+</html>

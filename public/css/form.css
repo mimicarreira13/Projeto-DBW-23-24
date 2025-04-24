@@ -1,0 +1,230 @@
+.container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh + 50px);
+  width: 500px;
+  background-color: rgb(68, 60, 140, 0.75); /* rgb(84, 84, 164); */
+  border-radius: 20px;
+  height: 600px;
+  margin-top: 200px;
+}
+
+.container h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container-fluid h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: calc(100vh + 50px);
+  width: 500px;
+  background-color: rgb(68, 60, 140, 0.75); /* rgb(84, 84, 164); */
+  border-radius: 20px;
+  height: 450px;
+  margin-top: 250px;
+}
+
+.container-fluid input[type="text"],
+input[type="password"] {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: -999;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: -999;
+}
+
+.botao:hover {
+  background-color: rgba(104, 75, 176, 1);
+  transform: scale(1.07);
+}
+
+button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 40%;
+  padding: 10px;
+  margin-left: 85px;
+  background-color: rgba(104, 75, 176, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: rgba(104, 75, 176, 1);
+  transform: scale(1.07);
+}
+
+/* Para o href do já tem conta - login*/
+.container a {
+  color: #fff;
+  transition: color 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+/* Para o href do já tem conta - login*/
+.container a:hover {
+  color: rgb(181, 165, 221);
+}
+
+.container-fluid a {
+  color: #fff;
+  transition: color 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid a:hover {
+  color: rgb(181, 165, 221);
+}
+
+.checkbox {
+  padding: 10px;
+}
+
+.my-confirm-button {
+  background-color: rgba(104, 75, 176, 1) !important;
+  width: fit-content;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.fa-regular.fa-eye {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  cursor: pointer;
+  color: #000;
+  justify-content: right;
+  width: 20px;
+  height: 20px;
+}
+
+.fa-regular.fa-eye-slash {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  cursor: pointer;
+  color: #000;
+  justify-content: right;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    height: calc(100vh + 10px);
+    width: 350px;
+    height: 600px;
+    margin-top: 150px;
+  }
+  /* Para telemoveis coisas escritas nanavegação*/
+  .container-fluid {
+    height: calc(100vh + 10px);
+    width: 350px;
+    height: 450px;
+    margin-top: 140px;
+  }
+  .container-fluid h2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .container input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 300px;
+    /* width: 100%; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  .botao {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    padding: 10px;
+    margin-left: 45px;
+    background-color: rgba(104, 75, 176, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+  }
+
+  .botao:hover {
+    background-color: rgba(104, 75, 176, 1);
+    transform: scale(1.07);
+  }
+  button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 40%;
+    padding: 10px;
+    margin-left: 85px;
+    background-color: rgba(104, 75, 176, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+  }
+  button:hover {
+    background-color: rgba(104, 75, 176, 1);
+    transform: scale(1.07);
+  }
+  .my-popup {
+    width: 70%;
+  }
+}

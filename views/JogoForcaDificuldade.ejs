@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <%- include('partials/head', {title: 'Jogo da Forca'}) %>
+  <link rel="stylesheet" href="./css/MenusJogos.css" />
+
+  <body onload="selectOptions('/JogoForca')" class="fundo">
+    <div><%- include('partials/header') %></div>
+    <div class="button-container2">
+      <button id="facil" class="button1" onclick="DificuldadeForca('facil')">
+        FÁCIL
+      </button>
+      <button id="medio" class="button2" onclick="DificuldadeForca('media')">
+        MÉDIA
+      </button>
+      <button
+        id="dificil"
+        class="button3"
+        onclick="DificuldadeForca('dificil')"
+      >
+        DIFÍCIL
+      </button>
+      <button id="play" class="button4">
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+    <script src="./js/dificuldades.js"></script>
+  </body>
+</html>

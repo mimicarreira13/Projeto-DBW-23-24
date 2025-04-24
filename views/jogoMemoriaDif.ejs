@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <%- include('partials/head', {title: 'Jogo da Memoria'}) %>
+  <link rel="stylesheet" href="./css/MenusJogos.css" />
+  <link rel="stylesheet" href="./css/jogoMemoria.css" />
+
+  <body onload="selectOptions('/jogoMemoria')" class="fundo">
+    <div><%- include('partials/header') %></div>
+    <div class="button-container2">
+      <button id="facil" class="button1" onclick="escolherDificuldade(8)" ;>
+        FÁCIL
+      </button>
+      <button id="medio" class="button2" onclick="escolherDificuldade(12)" ;>
+        MÉDIA
+      </button>
+      <button id="dificil" class="button3" onclick="escolherDificuldade(20)" ;>
+        DIFÍCIL
+      </button>
+      <button class="button4">
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+    <script src="./js/jogoMemoria.js"></script>
+    <script src="./js/dificuldades.js"></script>
+  </body>
+</html>

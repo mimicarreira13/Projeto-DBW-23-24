@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: 'Criar Conta'}) %>
+
+  <body class="fundo">
+    <div>
+      <%- include('partials/header') %>
+      <section>
+        <link rel="stylesheet" href="./css/form.css" />
+        <div class="container">
+          <div class="row">
+            <div>
+              <h2>Criar Conta</h2>
+              <form action="/registar" method="POST">
+                <div class="form-group">
+                  <label for="username">Nome de utilizador:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Palavra-passe:</label>
+                  <div class="input-wrapper">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                  <span id="mostrarSenha" ><i class="fa-regular fa-eye-slash"></i></span>
+                </div>
+                <div class="form-group">
+                  <label for="password">Confirme a Palavra-passe:</label>
+                  <div class="input-wrapper">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password_confirmation"
+                    name="password_confirmation"
+                    required
+                  />
+                  
+                  <!-- <input type="checkbox" onclick="mostraPassword()" /> Mostrar -->
+                  <!-- Palavra-passe -->
+                  <span id="mostrarSenhaConf" ><i class="fa-regular fa-eye-slash"></i></span>
+                </div>
+                  </div>
+                  <div>
+                    <span id="password_error" style="color: red"></span>
+                  </div>
+                </div>
+                <button type="submit" class="botao">Criar Conta</button>
+                <div>
+                  <br />
+                  <a href="login">Já tem conta? Login</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/matching_passwords.js"></script>
+    <script>
+      if (window.location.search.includes("message=not_authenticated")) {
+        Swal.fire({
+          text: "É necessário se registar para ver este conteúdo!",
+          customClass: {
+            confirmButton: "my-confirm-button",
+            popup: "my-popup",
+          },
+        });
+      }
+      if (window.location.search.includes("message=updateDados")) {
+        Swal.fire({
+          text: "ATUALIZOU OS DADOS! Faça login novamente",
+          customClass: {
+            confirmButton: "my-confirm-button",
+            popup: "my-popup",
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

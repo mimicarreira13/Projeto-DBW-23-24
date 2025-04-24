@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <%- include('partials/head', {title: 'Jogo da Memoria'}) %>
+  <link rel="stylesheet" href="./css/MenusJogos.css" />
+  <link rel="stylesheet" href="./css/jogoMemoria.css" />
+
+  <body class="fundo">
+    <div><%- include('partials/header') %></div>
+
+    <section class="center-container">
+      <div class="fundo_titulo">
+        <h1>Jogo da Memoria</h1>
+      </div>
+    </section>
+    <div class="button-container">
+      <button
+        onclick="window.location.href='/instrucoes#jogo_memoria'"
+        class="button1"
+      >
+        INSTRUÇÕES
+      </button>
+      <button onclick="window.location.href='/jogoMemoriaDif'" class="button2">
+        DIFICULDADE
+      </button>
+      <button onclick="window.location.href='/jogoMemoria'" class="button4">
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+  </body>
+</html>

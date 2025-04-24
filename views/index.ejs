@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: 'Página Inicial'}) %>
+
+  <body class="fundo">
+    <div><%- include('partials/header') %></div>
+    <div class="conteudo">
+      <div class="game-container">
+        <div class="game">
+          <button>
+            <img
+              src="images/jogo_do_galo.gif"
+              alt="Jogo do Galo"
+              onclick="window.location.href='/JogoGaloInicio'"
+            />
+          </button>
+          <h2>Jogo do Galo</h2>
+        </div>
+        <div class="game">
+          <button>
+            <img
+              src="images/jogo_da_memoria.gif"
+              alt="Jogo da Memória"
+              onclick="window.location.href = '/jogoMemoriaIn'"
+            />
+          </button>
+          <h2>Jogo do Memória</h2>
+        </div>
+        <div class="game">
+          <button>
+            <img
+              src="images/jogo_da_forca.gif"
+              alt="Jogo da Forca"
+              onclick="window.location.href='/JogoForcaInicio'"
+            />
+          </button>
+          <h2>Jogo do Forca</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

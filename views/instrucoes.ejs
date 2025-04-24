@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: 'Instruções'}) %>
+
+  <body class="fundo">
+    <div><%- include('partials/header') %></div>
+    <section class="instrucoes">
+      <h2 id="jogo_galo">Jogo do Galo</h2>
+      <br>
+      <% var sentences = info[0].text.split("\n"); %>
+      <% sentences.forEach(function(sentence) { %>
+        <p><%= sentence.trim() %></p>
+      <% }); %>
+      <br id="jogo_memoria">
+      <br>
+      <hr class ="section-divider">
+      <br>
+
+      <h2>Jogo da Memória</h2>
+      <br>
+      <% var sentences = info[1].text.split("\n"); %>
+      <% sentences.forEach(function(sentence) { %>
+        <p><%= sentence.trim() %></p>
+      <% }); %>
+      <br id="jogo_forca">
+      <hr class ="section-divider">
+      <br>
+
+      <h2>Jogo da Forca</h2>
+      <br>
+      <% var sentences = info[2].text.split("\n"); %>
+      <% sentences.forEach(function(sentence) { %>
+        <p><%= sentence.trim() %></p>
+      <% }); %>
+      <br>
+      <br>
+    </section>
+  </div>
+  </body>
+</html>

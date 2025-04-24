@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: 'jogo do Galo'}) %>
+  <link rel="stylesheet" href="./css/JogodoGalo.css" />
+
+<body class="fundo">
+  <div><%- include('partials/header') %></div>
+    <div class="conteudo">
+      <div class="Jogo">
+        <div class="titulo-container"><h1> Jogo do galo</h1>
+        </div>
+        <div class="board">
+            <div class="cell" onclick="cellClicked(0)"></div>
+            <div class="cell" onclick="cellClicked(1)"></div>
+            <div class="cell" onclick="cellClicked(2)"></div>
+            <div class="cell" onclick="cellClicked(3)"></div>
+            <div class="cell" onclick="cellClicked(4)"></div>
+            <div class="cell" onclick="cellClicked(5)"></div>
+            <div class="cell" onclick="cellClicked(6)"></div>
+            <div class="cell" onclick="cellClicked(7)"></div>
+            <div class="cell" onclick="cellClicked(8)"></div>
+        </div>
+        <div class="botao-container"><button class="botao" onclick="reset()" > Reset </button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/JogoDoGalo.js"></script>
+</body>
+</html>
+
+      
+      
+    

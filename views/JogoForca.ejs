@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <%- include('partials/head', {title: 'Jogo da Forca'}) %>
+  <link rel="stylesheet" href="./css/jogoForca.css" />
+
+  <body class="fundo">
+    <div><%- include('partials/header') %></div>
+    <section class="center-container">
+      <div class="fundo_titulo">
+        <h1>Jogo da Forca</h1>
+      </div>
+    </section>
+    <section class="container">
+      <div id="titleAndButton">
+        <h3 id="t_categoria" class="categoria hide">Categoria:</h3>
+        <button id="DicaButton" class="DicaButton hide">Dica</button>
+        <h4 id="score" class="score hide">Score: 0</h4>
+        <h5 id="timer"></h5>
+        <br />
+      </div>
+      <div id="loadingScreen">
+        <div>Loading...</div>
+      </div>
+      <div id="options-container" class="options-container hide"></div>
+      <div id="letter-container" class="letter-container hide"></div>
+      <div id="user-input-section"></div>
+      <canvas id="canvas" class="canvas hide"></canvas>
+      <div id="new-game-container" class="new-game-popup hide">
+        <div id="result-text"></div>
+        <button id="new-game-button">Novo Jogo</button>
+      </div>
+    </section>
+    <script src="./js/jogo_forca.js"></script>
+  </body>
+</html>

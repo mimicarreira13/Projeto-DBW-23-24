@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <%- include('partials/head', {title: 'A Minha Conta'}) %>
+
+<body class="fundo">
+    <div><%- include('partials/header') %></div>
+    <link rel="stylesheet" href="./css/pontuacao.css" />
+    <div class ="titulo">
+        <h1>Pontuações</h1>
+        <p>Veja as suas pontuações aqui! </p>
+    </div>
+    <div class="row">
+        <section class = "col-lg-4">
+            <table  id="tabelaGalo">
+                <tr class="table_titulo">
+                    <th>
+                        Data 
+                    </th>
+                    <th>
+                        Jogo do Galo
+                    </th>
+                </tr>
+            </tr>
+            <!-- recebe todos os valores da pontuação do jogo do galo e verifica se está a 0-->
+            <% bla.score_and_Date.forEach(inf => { %>
+                <% if (inf.score_galo != 0) { %>
+            <tr class="table_corpo">
+                <td>
+                    <% 
+                    <!-- formata a data para o formato dia-mes-ano -->
+                        let date = new Date(inf.date);
+                        <!-- getMonth() retorna o mês de 0 a 11, por isso é necessário adicionar 1 -->
+                        let formattedDate =  date.getDate()+ '-' + (date.getMonth() + 1) + '-' + date.getFullYear();
+                    %>
+                    <%= formattedDate %>
+                </td>
+                <td>
+                    <!-- imprime a pontuação do jogo do galo -->
+                    <%= inf.score_galo %>
+                </td>
+            </tr>
+                <% } %>
+                <% }) %>
+            </table>
+
+        </section>
+        <section class = "col-lg-4">
+            <table  id="tabelaMemoria">
+                <tr class="table_titulo">
+                    <th>
+                        Data
+                    </th>
+                    <th>
+                        Jogo da Memoria
+                    </th>
+                </tr>
+                <% bla.score_and_Date.forEach(inf => { %>
+                    <% if (inf.score_memoria != 0) { %>
+                    <tr class="table_corpo">
+                    <td>
+                        <% 
+                            let date = new Date(inf.date);
+                            let formattedDate =  date.getDate()+ '-' + (date.getMonth() + 1) + '-' + date.getFullYear();
+                        %>
+                        <%= formattedDate %>
+
+                    </td>
+                    <td>
+                        <%= inf.score_memoria %>
+                    </td>
+                    </tr>
+                    <% } %>
+                    <% }) %>
+            </table>
+        </section>
+        <section class = "col-lg-4">
+            <table id="tabelaForca">
+                <tr class="table_titulo">
+                    <th>
+                        Data
+                    </th>
+                    <th>
+                        Jogo da Forca
+                    </th>
+                </tr>
+                <% bla.score_and_Date.forEach(inf => { %>
+                    <% if (inf.score_forca != 0) { %>
+                    <tr class="table_corpo">
+                    <td>
+                        <% 
+                            let date = new Date(inf.date);
+                            let formattedDate =  date.getDate()+ '-' + (date.getMonth() + 1) + '-' + date.getFullYear();
+                        %>
+                        <%= formattedDate %>
+
+                    </td>
+                    <td>
+                        <%= inf.score_forca %>
+                    </td>
+                    </tr>
+                    <% } %>
+                    <% }) %>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
