@@ -15,6 +15,11 @@ Além da componente de jogo, a aplicação implementa funcionalidades de autenti
 
 A equipa deste projeto foi composta por três elementos, cujos nomes podem ser consultados na secção "Sobre" do próprio site. Este trabalho obteve a classificação final de **20 valores**.
 
+## 🔗 Aceder ao Projeto Online
+
+Podes aceder à versão online do projeto aqui:  
+👉 [Classic Games no Render](https://classic-games.onrender.com)
+
 ## 📝 Como Usar 
 
 Ao abrir o website o utilizador depara-se com a página inicial que contém os 3 jogos no centro da página.
