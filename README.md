@@ -1,5 +1,7 @@
 # PROJETO_DBW (Classic Games) 🎮
 
+> **Projeto de Desenvolvimento Baseado na Web – LEI 2023/2024**
+
 ## Indice 
 - Descrição 
 - Como Usar
