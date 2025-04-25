@@ -19,6 +19,17 @@ The team consisted of three members, whose names are available in the "About" se
 
 ---
 
+## 👥 Team Members
+
+This project was developed as a group collaboration for the **Web-Based Development (DBW)** course.  
+Huge thanks to the amazing teammates who helped bring this platform to life:
+
+- [Milena Carreira](https://github.com/mimicarreira13) *(that's me!)*
+- [Tânia Vieira](https://github.com/elisagv)
+- [Alexandre Nóbrega]
+
+---
+
 ## 🔗 Online Access
 
 You can access the live version of the project here:  
