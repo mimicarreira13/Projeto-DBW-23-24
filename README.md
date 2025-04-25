@@ -89,6 +89,22 @@ The navigation bar turns into a hamburger menu on the left and a profile/login i
 <img src="./images/menu_mobile.png" alt="Mobile Nav Menu" width="305"/>
 <img src="./images/pagina_inicial_mobile.png" alt="Mobile Logged-In View" width="292"/>
 
+
+## 🧾 Installation
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git git@github.com:mimicarreira13/classic-games-web.git
+
+# Install dependencies
+npm install
+
+# Start the application
+npm start
+
+
 ---
 
 ## ⚙️ Technologies Used
