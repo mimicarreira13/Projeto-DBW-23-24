@@ -1,102 +1,108 @@
-# PROJETO_DBW (Classic Games) 🎮
+# 🎮 Classic Games Web Platform
 
-> **Projeto de Desenvolvimento Baseado na Web – LEI 2023/2024**
+> **Web-Based Development Project – LEI 2023/2024**
 
-## Indice 
-- Descrição 
-- Como Usar
-- Tecnologias usadas
+## 📋 Table of Contents
+- Description
+- How to Use
+- Technologies Used
 
+---
 
+## 🤔 Description
 
-## 🤔 Descrição 
+This project was developed in a group setting as part of the **Web-Based Development (DBW)** course. It consists of a classic games platform called **Classic Games**, featuring three interactive games: Tic-Tac-Toe, Memory Game, and Hangman.
 
-Este projeto foi desenvolvido em grupo no âmbito da unidade curricular de Desenvolvimento Baseado na Web (DBW) e consistiu na criação de uma plataforma de jogos clássicos intitulada **Classic Games**. O website inclui três jogos interativos: Jogo do Galo, Jogo da Memória e Jogo da Forca.
+Beyond gameplay, the application includes authentication, user account customization, score tracking, and ranking systems. The architecture is modular and prepared for the future integration of additional games and features.
 
-Além da componente de jogo, a aplicação implementa funcionalidades de autenticação, personalização de conta, sistema de pontuação e rankings. A arquitetura do projeto está preparada para a adição futura de novos jogos e funcionalidades.
+The team consisted of three members, whose names are available in the "About" section of the website. This project received a final grade of **20/20**.
 
-A equipa deste projeto foi composta por três elementos, cujos nomes podem ser consultados na secção "Sobre" do próprio site. Este trabalho obteve a classificação final de **20 valores**.
+---
 
-## 🔗 Aceder ao Projeto Online
+## 🔗 Online Access
 
-Podes aceder à versão online do projeto aqui:  
-👉 [Classic Games no Render](https://classic-games.onrender.com)
+You can access the live version of the project here:  
+👉 [Classic Games on Render](https://classic-games.onrender.com)
 
-## 📝 Como Usar 
+---
 
-Ao abrir o website o utilizador depara-se com a página inicial que contém os 3 jogos no centro da página.
-Tem ainda a barra de navegação que estará presente em todas as páginas. A barra de navegação é composta pelo logo do site na parte esquerda da barra seguido de todas as páginas de navegação: Instruções, Sobre, Novidades e Página Inicial. Na parte direita da barra de navegação encontra-se um botão de Login que ao ser cicado redireciona para a página de criação de conta.
+## 📝 How to Use
 
-<img width="1280" alt="pagInicial" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/448c5c61-0509-45f1-85aa-8ed20e40a936">
+Upon opening the website, the user is greeted with the home page displaying the three game options centered on the screen. A navigation bar appears on all pages. On the left, it includes the site logo and links to: Instructions, About, News, and Home. On the right, there's a **Login** button that redirects to the registration page.
 
-Cada jogo que se encontra no centro da página é um botão e que redireciona para o menu inicial de cada jogo, no entanto se o utilizador tentar aceder a algum dos jogos e não tiver realizado o login será redirecionado para a página de criação de conta recebendo um pop up a dizer "É necessário se registar para ver este conteúdo!". Para o caso das outras páginas presentes na barra de navegação é possível aceder sem conta as páginas: Sobre, Novidades e Página inicial.
+<img src="./images/pagina_inicial.png" alt="Home Page" width="1280"/>
 
-<img width="1278" alt="jogoNo" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/c74e0869-2905-48c6-94c5-e056e89b5d5e">
+Each game on the home page is a button that leads to its game menu. If the user is not logged in, they will be redirected to the account creation page with a pop-up saying: _"You must register to access this content!"_ Pages like **About**, **News**, and **Home** are accessible without login.
 
-Se o utilizador selecinar a página 'Sobre' será redirecionado para uma página que fala um pouco sobre o site e mostra quem são os ciradores do mesmo.
+<img src="./images/only_with_login.png" alt="Game Access" width="1278"/>
 
-<img width="1279" alt="sobre" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/91f7de46-31a4-4389-b6e7-082554554679">
+Clicking on **About** redirects to a page that briefly explains the site and lists its creators.
 
-Se o utilizador selecionar a página 'Novidades' será redirecionado para uma página com as novidades que são novos jogos que pretendemos trazer ao site. Fo decidido que esta página fosse acessível sem login como uma forma de cativar os utilizadores a se inscreverem e jogarem no nosso site.
+<img src="./images/sobre.png" alt="About Page" width="1279"/>
 
-<img width="1277" alt="Nov" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/48e82b22-2097-4058-b2c5-36740c60c8f7">
+Clicking on **News** opens a page with upcoming game announcements. It’s publicly accessible to encourage users to register.
 
-Se o utilizador selecinar a página 'Página Inicial' será redirecionado para uma página inical (descrita anteriormente).
+<img src="./images/novidades.png" alt="News Page" width="1277"/>
 
-Se o utilizador selecionar a página 'Instruções' acontecerá o mesmo que se selecionar um dos jogos se não tiver o login feito, uma vez que não é acessível a todos, sendo assim redirecionado para a página de criação de conta recebendo um pop up a dizer "É necessário se registar para ver este conteúdo!".
+Clicking **Home** leads back to the home page (as described above). Clicking **Instructions** without being logged in shows the same registration-required pop-up and redirects to account creation.
 
-<img width="1280" alt="instrucoesLogin" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/0f6f953b-6179-46b3-b517-8fd5cf7f5c20">
+<img src="./images/intrucoes.png" alt="Instructions Access" width="1280"/>
 
-Quando o utilizador está na página de criação de conta é apresentado com um formulário com os seguintes campos: Nome de Utilizador, Email, Palavra-passe, Confirme a Palavra-passe. Ao preencher corretamente os campos tem um botão 'Criar Conta' para poder avançar para a página de login e, assim o utilizador poder entrar na sua conta. Existe ainda um icon em forma de olho que ao ser clicado permite visualizar a palavra passe inserida. Caso o registo não seja possível, por , por exemplo, o utilizador já existir é mostrado um popup com essa informação.
-Ainda na página de criação de conta, se o utilizador já tiver um conta no website existe um link abaixo do botão 'Criar Conta' com a seguinte informação 'Já tem conta? Login' que quando é carregado redireciona o utilizador para a página de Login.
+The **Create Account** page contains a form with: Username, Email, Password, and Confirm Password. A **Create Account** button submits the form. If the user already exists, an error popup appears. There's also a link below: _"Already have an account? Login"_, redirecting to the login page.
 
-<img width="1278" alt="criarConta" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/ac03516c-bbcb-462e-a16a-156c85dad60c">
+<img src="./images/criar_conta.png" alt="Create Account Page" width="1278"/>
 
-Na página de login o utilizador é apresentado com dois campos: Nome de utilizador e Palavra-passe. Estes campos devem ser preenchidos de acorde com os dados de registo do utilizador, após preenchidos estes campos existe um botão de 'Login' abaixo do formulário. Após clicar no botão, se o login for bem sucedido, o utilizador é redirecionado para a página inicial. Caso o login não seja bem sucedido é mostrado um popup a indicar "O utilizador não existe!" e permanece na mesma página. Caso o utilizador queira voltar para o formulário de criar conta, existe um link abaixo do botão de login com a seguinte informação "Não tem conta? Registar" que ao ser clicado redireciona entao para a página de criação de conta.
+The **Login** page includes Username and Password fields. After logging in successfully, the user is redirected to the home page. Failed logins show a popup: _"User does not exist!"_. A link allows switching back to the registration form.
 
-<img width="1280" alt="login" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/92731ac0-86be-4edd-a700-a56bb369dc12">
+<img src="./images/login.png" alt="Login Page" width="1280"/>
 
-Após o login o utilizador é redirecionado para a página inicial com algumas modificações na barra de navegação como a adição da página 'A Minha Conta' e a mudança do botão Login para Logout. Estando assim na sua conta, o utilizador já pode aceder a todos os conteúdos sem qualquer restrição.
+After logging in, the navigation bar updates: **Login** becomes **Logout**, and **My Account** is added. Users gain access to all features.
 
-Estando então na página inicial com o login efetuado, ao carregar num dos jogos é então direcionado para o menu inicial do jogo que contém 3 opções: Instruções, Dificuldade e uma seta que é um botão de play.
-Ao carregar nas instruções o utilizador é redirecionado para a página das instruções para o local da página onde estão as instruções para o jogo em questão.
-Se o utilizador carregar no botão de play será redirecionado para a página do jogo em si sendo o nível como default "fácil".
-Quando o utilizador seleciona o botão de dificuldade é redirecionado para uma página com 4 botões, 3 sendo as dificuldades.
+From the home page, clicking a game opens a game menu with three options: **Instructions**, **Difficulty**, and a play arrow. Instructions redirect to the game’s instruction section. If the user chooses difficulty, they are redirected to a page with 3 difficulty buttons. If they click play without selecting a difficulty, a pop-up appears.
 
-<img width="1280" alt="jogoIN" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/00778788-3f32-444c-b452-e9cc8b3e55a9">
+<img src="./images/menu_jogo.png" alt="Game Menu" width="1280"/>
 
-Estando no menu de dificuldade de cada jogo é possível escolher uma dificuldade: "fácil", "média", "difícil".
-Neste menu existe ainda outra vez um botão de play. 
-Se o utilizador cerregar no botão de play sem escolher uma dificuldade é apresentado o popup "É necessário escolher uma dificuldade!". Assim após o o utilizador selecionar uma dificuldade tem de carregar no botão de play e assim será redirecionado para a página do jogo em si para poder jogar.
+In the difficulty menu, the user selects between: Easy, Medium, or Hard. Clicking **Play** after choosing a difficulty redirects to the game.
 
-<img width="1280" alt="dif" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/fd16357f-00ce-4377-b072-7bafe0b281c7">
+<img src="./images/menu_dificuldade.png" alt="Difficulty Menu" width="1280"/>
 
-Na página do Jogo do Galo é só o utilizador começar a jogar, sendo mostrados popups quando o utilizador ganha e mostrando a sua pontuação.
+### Game Overviews:
 
-Na página do Jogo da Memória é só o utilizador comecar a jogar escolhendo uma carta e assim começa o tempo a contar de forma descrescente. É adicionado ao score cada vez que o utilizador encontra os dois pares de cartas. No final do jogo é apresentado um popup a mostrar que o jogo foi concluido.
+- **Tic-Tac-Toe:** Immediate play; pop-ups show win messages and scores.
+- **Memory Game:** Timer starts after first card. Matching pairs increase score. Completion shows a success popup.
+- **Hangman:** Shows a loading screen, followed by category selection. The game displays a word (hidden) and letter buttons. Hints are available in Easy/Medium. Medium includes a timer. Hard removes hints.
 
-Na página do jogo da forca é apresentado um loading indicando que o jogo está a carregar. Após ser carregado o utilizador é apresentado com trés opções de categorias para as palavras. apóis selecionar uma categoria é a presentada uma palavra em forma de _ e os botões das letras para selecionar. Existe ainda um botão de dica que permite que o utilizador visualize uma dica relacionada a palavra. No nível de dificulade "medio" é adicionado ainda um timer de forma decrescente. Já no nível difícil tembém tem um timer mas o botão da "Dica" fica indisponível e o jogador tem de adivinhar a palavra sem dicas.
+### My Account Page:
 
-Ao caregar na página "A Minha Conta" o utilizador pode aceder às suas informações e alterá-las, como por exemplo: inserir uma imagem de perfil, alterar o username, alterar o email, alterar a palavra passe. Nesta página existem dois botões: "Pontuação" - para consultar as pontuações até ao momento de todos os jogos do site; "Classificações" - para consultar o ranking dos jogos com todos os utilizadores da plataforma.
+Users can:
+- Upload a profile image
+- Edit username, email, password
+- View individual scores
+- View game leaderboards
 
-<img width="1280" alt="minhaConta" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/ac21a99d-b1d8-4d5b-98eb-ee0fd461ceb1">
+<img src="./images/perfil.png" alt="My Account Page" width="1280"/>
 
-Para modo de telemóvel na barra de navegação temos à esquerda 3 linhas horizontais seguindas que, se o utilizador carregar aparece um menu com todas as páginas disponíveis. Ao lado desse menu aparece o logo do site, e na parte direita da barra de navegacao tem um icon de um boneco que, se o utilizador carregar redireciona-o para á página de criação de conta. Quando o utilizador tem o login efetuado o icon de um boneco passa a ser um icon de um retangulo com uma seta representando o logout.
+### Mobile Version:
 
-<img width="305" alt="tel" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/72a86c45-ec16-4ebe-86d5-0b342dcecafe">
+The navigation bar turns into a hamburger menu on the left and a profile/login icon on the right. When logged in, the icon becomes a logout symbol.
 
-<img width="292" alt="telcom" src="https://github.com/elisagv/PROJETO_DBW/assets/128436366/7c841203-96f2-47af-bd28-17baeae7fb30">
+<img src="./images/menu_mobile.png" alt="Mobile Nav Menu" width="305"/>
+<img src="./images/pagina_inicial_mobile.png" alt="Mobile Logged-In View" width="292"/>
 
-## ⚙️ Tecnologias usadas
+---
+
+## ⚙️ Technologies Used
 
 - EJS
 - CSS
-- MONGODB
-- JAVA SCRIPT
-- MULTER
-- NODEMON
-- PASSPORT
-- FONT AWESOME (ICONS)
-- BOODSTRAP
-- SWEAT ALERT (POPUPS)
+- MongoDB
+- JavaScript
+- Multer
+- Nodemon
+- Passport
+- Font Awesome (Icons)
+- Bootstrap
+- SweetAlert (Popups)
+
+---
 
